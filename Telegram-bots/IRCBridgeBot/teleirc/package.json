@@ -1,0 +1,72 @@
+{
+  "_from": "teleirc",
+  "_id": "teleirc@0.4.8",
+  "_inBundle": false,
+  "_integrity": "sha512-TGBFmbM9vkCHOBHPIJgH/23ry5yS8n8/c27M6lUyeJZ1pDt8vc1PLMyFCUu1HaAtH9anlsQQPHx/DeRmHBsJUg==",
+  "_location": "/teleirc",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "teleirc",
+    "name": "teleirc",
+    "escapedName": "teleirc",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/teleirc/-/teleirc-0.4.8.tgz",
+  "_shasum": "eaa3b1e1db4047bd3f798a3298267f302e514280",
+  "_spec": "teleirc",
+  "_where": "/usr/home/loox",
+  "bin": {
+    "teleirc": "bin/teleirc"
+  },
+  "bugs": {
+    "url": "https://github.com/FruitieX/teleirc/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "git-rev-sync": "^1.6.0",
+    "imgur": "^0.2.0",
+    "irc-colors": "^1.2.1",
+    "irc-framework": "^2.8.1",
+    "lodash": "^4.12.0",
+    "mkdirp": "^0.5.1",
+    "node-static": "^0.7.7",
+    "os-homedir": "^1.0.1",
+    "string.prototype.startswith": "^0.2.0",
+    "tgfancy": "^0.12.0",
+    "winston": "^2.2.0",
+    "yargs": "^10.0.3"
+  },
+  "deprecated": false,
+  "description": "Telegram <-> IRC gateway",
+  "devDependencies": {
+    "jscs": "^3.0.3",
+    "mocha": "^4.0.1",
+    "mocha-jscs": "^5.0.0",
+    "mocha-jshint": "^2.3.1"
+  },
+  "homepage": "https://github.com/FruitieX/teleirc",
+  "license": "MIT",
+  "name": "teleirc",
+  "preferGlobal": true,
+  "repository": [
+    {
+      "type": "git",
+      "url": "https://github.com/FruitieX/teleirc.git"
+    }
+  ],
+  "scripts": {
+    "genconfig": "node bin/teleirc --genconfig",
+    "join-tg": "node src/join-tg.js",
+    "start": "node bin/teleirc",
+    "test": "NODE_ENV=test ./node_modules/mocha/bin/mocha"
+  },
+  "version": "0.4.8"
+}
