@@ -11,7 +11,8 @@ module.exports = config;
 config.logLevel = 'info';
 
 // paste the bot API token you got from BotFather here:
-config.tgToken = ''
+// replace $APITOKEN
+config.tgToken = '$APITOKEN'
 
 // only relay IRC events present in array
 // possible values include:
@@ -45,14 +46,16 @@ config.maxMsgAge = 60;
 config.httpPort = 9090;
 
 // HTTP server location, URLs are generated from this
-config.httpLocation = 'http://t.eshell.net' + ':' + config.httpPort;
+// replace $HTTPADDRESS
+config.httpLocation = '$HTTPADDRESS' + ':' + config.httpPort;
 
 // Upload sent photos to Imgur, links to Imgur uploads are
 // forwared to IRC
 config.uploadToImgur = false;
 
 // Imgur client id required for uploading photos to Imgur
-config.imgurClientId = 'YOUR-CLIENT-ID';
+// replace $YOURCLIENTID
+config.imgurClientId = '$YOURCLIENTID';
 
 // Whether to allow sending messages to IRC without nick prefix
 config.allowCommands = false;
